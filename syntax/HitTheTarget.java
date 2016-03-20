@@ -20,6 +20,10 @@ public class HitTheTarget {
             }
         }
 		
+<<<<<<< HEAD
 		//Test conflicts - second git repository
+=======
+		//Testing conflicts
+>>>>>>> 1a216e5510388ed460cb76f1a98302efdfd0cbab
     }
 }
