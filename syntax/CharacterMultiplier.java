@@ -14,6 +14,8 @@ public class CharacterMultiplier {
         String string2 = input.split(" ")[1];
 
         System.out.println(multiplyCharacters(string1, string2));
+		
+		//Test comment for testing git
     }
 
     private static int multiplyCharacters(String string1, String string2) {
