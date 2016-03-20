@@ -19,5 +19,7 @@ public class HitTheTarget {
                 }
             }
         }
+		
+		//Test conflicts - second git repository
     }
 }
