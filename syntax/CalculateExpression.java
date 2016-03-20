@@ -17,5 +17,7 @@ public class CalculateExpression {
         double diff = Math.abs((a + b + c)/3 - (f1 + f2)/2);
 
         System.out.printf("F1 result: %.2f; F2 result: %.2f; Diff: %.2f", f1, f2, diff);
+		
+		//This is a test comment in order to make a change and commit it from SVN
     }
 }
