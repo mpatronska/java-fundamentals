@@ -7,29 +7,25 @@ import java.util.Scanner;
  * Created by mpatronska on 3/19/2016.
  */
 public class RandomizeNumbers {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
+     public static void main(String[] args) {
 
-        Random random = new Random();
-        int[] array = new int[Math.abs(n-m) + 1];
-        int index = 0;
-        if (n <= m) {
-            for (int i = n; i <=m; i ++) {
-                array[index] = i;
-                index++;
-            }
-        } else {
-            for (int i = m; i <=n; i ++) {
-                array[index] = i;
-                index++;
-            }
+        java.util.Scanner console = new java.util.Scanner(System.in);
+
+        int N = console.nextInt();
+        int M = console.nextInt();
+        console.close();
+        int max = Math.max(N,M);
+        int min = Math.min(N,M);
+
+        ArrayList<Integer> array = new ArrayList<Integer>();
+        for (int i = min; i <= max; i++) {
+            array.add(i);
         }
 
-        for (int i = 0; i < array.length; i ++) {
-            System.out.print(array[random.nextInt(array.length)] + " ");
-        }
+        Collections.shuffle(array);
 
+        for (Integer number: array) {
+            System.out.print(number + " ");
+        }
     }
 }
